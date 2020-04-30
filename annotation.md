@@ -162,7 +162,9 @@ Obs: ao atribuir o valor `auto` na `margin` o navegador será o responsável por
 
 - `float` Retira o elemento do fluxo vertical do documento. (Colocando em outro contexto).
 
-Falta explicar as tags semânticas do HTML5 e sobre a importância da semântica. (Pesquisar mais tags com semântica).
+###### Falta explicar
+
+Tags semânticas do HTML5 e sobre a importância da semântica. (Pesquisar mais tags com semântica).
 CSS Reset
 Display - Block, inline e inline-block (Estudar mais).
 Position - Static, Relative, Absolute e Fixed (Estudar mais).
