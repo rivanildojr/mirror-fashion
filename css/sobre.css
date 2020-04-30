@@ -15,7 +15,7 @@ h1 {
 
 p {
   padding: 0 45px;
-  text-indent: 15px;
+  text-indent: 15px; /* Falta explicar */
   text-align: justify;
 }
 
@@ -51,7 +51,7 @@ footer {
 
 footer img {
   margin-right: 30px;
-  vertical-align: middle;
+  vertical-align: middle; /* Falta explicar */
   width: 94px;
 }
 
