@@ -164,7 +164,13 @@ Obs: ao atribuir o valor `auto` na `margin` o navegador será o responsável por
 
 ###### Falta explicar
 
-Tags semânticas do HTML5 e sobre a importância da semântica. (Pesquisar mais tags com semântica).
-CSS Reset
-Display - Block, inline e inline-block (Estudar mais).
-Position - Static, Relative, Absolute e Fixed (Estudar mais).
+- Tags semânticas do HTML5 e sobre a importância da semântica. (Pesquisar mais tags com semântica).
+- CSS Reset
+- Display - Block, inline e inline-block (Estudar mais).
+- Position - Static, Relative, Absolute e Fixed (Estudar mais).
+- Form - form, input, button
+- Clear e a junção dele com o float
+- text-transform e text-decoration
+- Cascata e Herança no CSS e o valor inherit
+- Vertical-align
+- Seletores de Atributos
