@@ -81,9 +81,22 @@ Aplica os estilos aos elementos filhos de um pai.
 
 #### Seletores de Class
 
-Aplica os estilos aos elementos quem contenha essa classe. (Usar classes facilita reuso de código e flexibilidade).
+Aplica os estilos aos elementos que contenha essa classe. (Usar classes facilita reuso de código e flexibilidade).
 
 - `.rodape { width: 94px } ou .secao { color:#fff }`
+
+#### Seletores de Atributo
+
+Aplica os estilos aos elementos que contenha a presença ou valor de um atributo para selecioná - lo.
+
+- `input[value] {color: #fff}` -> Aplica a todos os elementos da tag input que tem o *atributo* "value".
+- `div[class|="menu"] {color: #000}` -> Aplica a todos os elementos da tag div que tem a *class* começando com *menu* seguinda de hífen e qualquer outra palavra.
+- `div[class~="menu"] {color: #fff}` -> Aplica a todos os elementos da tag input que tem a *div* que conter o a class com a palavra problema.
+- `input[name^="menu"] {color: #000}` -> Aplica a todos os elementos da tag input que tem a *name* iniciando em "menu".
+- `input[name$="menu"] {color: #fff}` -> Aplica a todos os elementos da tag input que tem a *name* terminando em "menu".
+- `input[name*="menu"] {color: #000}` -> Aplica a todos os elementos da tag input que tem a *name* contendo "menu" em qualquer posição.
+
+Obs: Os seletores de atributo têm o mesmo valor de especifidade dos seletores de classe
 
 ### Cores Na Web
 
@@ -174,3 +187,6 @@ Obs: ao atribuir o valor `auto` na `margin` o navegador será o responsável por
 - Cascata e Herança no CSS e o valor inherit
 - Vertical-align
 - Seletores de Atributos
+- propriedades de background
+- propriedades de transform
+- tecnica image replacement
