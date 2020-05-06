@@ -1,0 +1,26 @@
+# Falta explicar
+
+- Tags semânticas do HTML5 e sobre a importância da semântica. (Pesquisar mais tags com semântica).
+- CSS Reset
+- Display - Block, inline e inline-block (Estudar mais).
+- Position - Static, Relative, Absolute e Fixed (Estudar mais).
+- Form - form, input, button
+- Clear e a junção dele com o float
+- text-transform e text-decoration
+- Cascata e Herança no CSS e o valor inherit
+- Vertical-align
+- Seletores de Atributos
+- propriedades de background
+- propriedades de transform
+- tecnica image replacement
+- Seletores, Pseudo-Class e Pseudo-elements(variações no content)
+- font-variant
+- Elementos unicode
+- Text-Shadow e Box-Shadow
+- Opacidade e RGBA
+- Prefixos dos principais navegadores.
+- Gradientes
+- Progressive Enhancement e graceful degradation
+- Transitions (linear, ease, ease-in, ease-in-out, cubic-bezier)
+- Transforms (Translate, Rotate, Scale, Skew)
+- Especificidade de Seletores CSS
