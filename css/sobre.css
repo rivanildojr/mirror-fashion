@@ -78,3 +78,46 @@ p::first-letter {
 :not(p) + p::first-line {
   font-variant: small-caps;
 }
+
+/* Aplicando a responsividade */
+
+@media (max-width: 939px) {
+  .container {
+    width: 96%;
+  }
+
+  header h1 img {
+    max-width: 30%;
+  }
+
+  .menu-opcoes ul {
+    text-align: center;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  figure {
+    padding: 5px;
+  }
+
+  #centro-distribuicao,
+  #centro-distribuicao img {
+    width: 96%;
+  }
+
+  #familia-pelho {
+    float: none;
+  }
+
+  @media (max-width: 939px) {
+    #centro-distribuicao {
+      width: 550px;
+    }
+
+    #centro-distribuicao img {
+      width: auto;
+    }
+  }
+}
