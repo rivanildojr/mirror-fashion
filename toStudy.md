@@ -14,7 +14,7 @@
 - propriedades de transform
 - tecnica image replacement
 - Seletores, Pseudo-Class e Pseudo-elements(variações no content)
-- font-variant
+- font-variant, column-count
 - Elementos unicode
 - Text-Shadow e Box-Shadow
 - Opacidade e RGBA
@@ -24,3 +24,6 @@
 - Transitions (linear, ease, ease-in, ease-in-out, cubic-bezier)
 - Transforms (Translate, Rotate, Scale, Skew)
 - Especificidade de Seletores CSS
+- Media Types e Media Queries
+- Viewport e device-width
+- Responsivo design e Mobile-First
