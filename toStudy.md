@@ -4,7 +4,6 @@
 - CSS Reset
 - Display - Block, inline e inline-block (Estudar mais).
 - Position - Static, Relative, Absolute e Fixed (Estudar mais).
-- Form - form, input, button
 - Clear e a junção dele com o float
 - text-transform e text-decoration
 - Cascata e Herança no CSS e o valor inherit
@@ -27,3 +26,8 @@
 - Media Types e Media Queries
 - Viewport e device-width
 - Responsivo design e Mobile-First
+- Form - Estudos de formularios
+- Tags - fieldset e legend
+- Box Model e Box-sizing
+- Unidades do CSS
+- Tabelas no HTML5
