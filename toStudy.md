@@ -31,3 +31,5 @@
 - Box Model e Box-sizing
 - Unidades do CSS
 - Tabelas no HTML5
+- Atributos customizado no HTML5
+- Bootstrap (O que resolve, quando adicionar no projeto e boas praticas)
