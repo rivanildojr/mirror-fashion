@@ -2,9 +2,6 @@
 
 - Tags semânticas do HTML5 e sobre a importância da semântica. (Pesquisar mais tags com semântica).
 - CSS Reset
-- Display - Block, inline e inline-block (Estudar mais).
-- Position - Static, Relative, Absolute e Fixed (Estudar mais).
-- Clear e a junção dele com o float
 - text-transform e text-decoration
 - Cascata e Herança no CSS e o valor inherit
 - Vertical-align
