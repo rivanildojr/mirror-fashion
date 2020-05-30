@@ -1,5 +1,3 @@
-- Clear e a junção dele com o float
-
 # Propriedades de posicionamento dos elementos com CSS
 
 ## Display

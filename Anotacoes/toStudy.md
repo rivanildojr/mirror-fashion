@@ -1,15 +1,12 @@
 # Falta explicar
 
 - Tags semânticas do HTML5 e sobre a importância da semântica. (Pesquisar mais tags com semântica).
-- CSS Reset
 - text-transform e text-decoration
 - Cascata e Herança no CSS e o valor inherit
 - Vertical-align
-- Seletores de Atributos
 - propriedades de background
 - propriedades de transform
 - tecnica image replacement
-- Seletores, Pseudo-Class e Pseudo-elements(variações no content)
 - font-variant, column-count
 - Elementos unicode
 - Text-Shadow e Box-Shadow
@@ -19,7 +16,6 @@
 - Progressive Enhancement e graceful degradation
 - Transitions (linear, ease, ease-in, ease-in-out, cubic-bezier)
 - Transforms (Translate, Rotate, Scale, Skew)
-- Especificidade de Seletores CSS
 - Media Types e Media Queries
 - Viewport e device-width
 - Responsivo design e Mobile-First
