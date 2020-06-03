@@ -1,24 +1,11 @@
 # Falta explicar
 
-- Tags semânticas do HTML5 e sobre a importância da semântica. (Pesquisar mais tags com semântica).
-- text-transform e text-decoration
 - Cascata e Herança no CSS e o valor inherit
-- Vertical-align
-- propriedades de background
-- propriedades de transform
 - tecnica image replacement
-- font-variant, column-count
 - Elementos unicode
-- Text-Shadow e Box-Shadow
-- Opacidade e RGBA
-- Prefixos dos principais navegadores.
-- Gradientes
 - Progressive Enhancement e graceful degradation
-- Transitions (linear, ease, ease-in, ease-in-out, cubic-bezier)
-- Transforms (Translate, Rotate, Scale, Skew)
 - Form - Estudos de formularios
 - Tags - fieldset e legend
-- Box Model e Box-sizing
-- Tabelas no HTML5
+- Tabelas no HTML5box
 - Atributos customizado no HTML5
 - Bootstrap (O que resolve, quando adicionar no projeto e boas praticas)
