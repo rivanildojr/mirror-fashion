@@ -128,6 +128,27 @@ Obs:
 - A pseudo-classe de negação :not não é considerada uma pseudo-classe no cálculo de especificação
 - Quando a regra !important é utilizada na declaração do estilo substitui qualquer outra declaração feita no CSS, onde quer que esteja na lista de declaração
 
+## Cascata e Herança no CSS (valor inherit)
+
+### Herança no CSS (valor inherit)
+
+Os Elementos herdam estilos dos seus elementos Pai. Entretanto, nem todos as propriedades podem ser herdadas.
+
+Para indicar que a determinada propriedade seja herdada é preciso utilizar o valor inherit na propriedade desejada.
+
+**Exemplo: { margin: inherit; }**
+
+### Cascata
+
+É o efeito que controla toda a precedência no CSS.
+
+Como ele funciona:
+
+  1. Encontre todas as declarações que aplicam a um elemento e propriedade em questão.
+  2. Ordene por origem e peso. Origem se refere à fonte da declaração (estilo do autor, estilo do usuário, padrão do browser) e peso se refere à importância da declaração. (Autor tem mais peso que o usuário que tem mais peso que o valor padrão. !important tem mais peso que declarações normais.
+  3. Calcule a especificidade.
+  4. Se duas regras são iguais em todos os passos acima, a última declaração vence. CSS embutido no HTML sempre vem depois de folhas de estilo externas, independentemente da ordem em que elas estão no arquivo HTML.
+
 ## Reset CSS
 
 - É uma técnica utilizada que consiste em manter o padrão dos estilos em todos os browser. Existem vários resets famosos no mercado que se encaixam em determinadas situações, mas sempre com o mesmo objetivo: _padronizar a estilização nos navegadores_.
@@ -148,6 +169,11 @@ Obs:
 
   - [Emanuel G. - Especifidade CSS](https://medium.com/emanuelg-blog/entendendo-a-preced%C3%AAncia-de-estilo-em-css-especificidade-heran%C3%A7a-e-efeito-cascata-a437c4929173)
   - [MDN - Especifidade CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity)
+
+- Cascata e Herança
+
+  - [MDN - Cascata e Herança](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Cascading_and_inheritance)
+  - [Emanuel G. - Cascata e Herança](https://medium.com/emanuelg-blog/entendendo-a-preced%C3%AAncia-de-estilo-em-css-especificidade-heran%C3%A7a-e-efeito-cascata-a437c4929173)
 
 - CSS Reset
 

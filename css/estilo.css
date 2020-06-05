@@ -9,8 +9,8 @@ header {
 
 .sacola {
   background-image: url(../img/sacola.png);
-  background-repeat: no-repeat; /* Falta explicar */
-  background-position: top right; /* Falta explicar */
+  background-repeat: no-repeat;
+  background-position: top right;
   font-size: 14px;
   text-align: right;
   width: 140px;
