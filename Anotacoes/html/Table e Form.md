@@ -37,7 +37,7 @@
 # Formulários
 
 
-
+  - `output` -> representa a saída de algum cálculo ou valor simples obtido a partir de um ou mais campos de um formulário
 
 # Materias de Apoio
 
