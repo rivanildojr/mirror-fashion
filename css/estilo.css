@@ -1,6 +1,6 @@
 body {
   color: #333;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 header {
@@ -191,6 +191,7 @@ header {
 }
 
 .painel h2 {
+  font-family: "Bad Script", sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;

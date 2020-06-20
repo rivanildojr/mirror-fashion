@@ -49,6 +49,11 @@ figcaption {
   width: 550px;
 }
 
+.iframe {
+  display: block;
+  margin: 10px auto;
+}
+
 #familia-pelho {
   float: right;
   margin: 0 0 10px 10px;
