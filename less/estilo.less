@@ -1,5 +1,46 @@
+@escuro: #333;
+
+//mixin para o transition
+.transicao(@propriedades, @tempo) {
+  -webkit-transition: @propriedades @tempo;
+  -moz-transition: @propriedades @tempo;
+  -ms-transition: @propriedades @tempo;
+  -o-transition: @propriedades @tempo;
+  transition: @propriedades @tempo;
+}
+
+//mixin para o gradiente
+.gradiente(@cor1, @cor2) {
+  background: @cor1; /* Navegadores antigos */
+  background: -moz-linear-gradient(top, @cor1 0%, @cor2 100%); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, @cor1),
+    color-stop(100%, @cor2)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    @cor1 0%,
+    @cor2 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, @cor1 0%, @cor2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, @cor1 0%, @cor2 100%); /* IE10+ */
+  background: linear-gradient(to bottom, @cor1 0%, @cor2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+                         startColorstr='@cor1',
+                         endColorstr='@cor2',
+                         GradientType=0 ); /* IE6-9 */
+}
+
+//mixin para o gradiente automatico
+.gradiente-automatico(@cor1) {
+  .gradiente(@cor1, darken(@cor1, 10%));
+}
+
 body {
-  color: #333;
+  color: @escuro;
   font-family: "PT Sans", sans-serif;
 }
 
@@ -95,7 +136,7 @@ header {
 }
 
 .menu-departamentos a {
-  color: #333;
+  color: @escuro;
   text-decoration: none;
 }
 
@@ -153,113 +194,107 @@ header {
 
   border-radius: 4px;
   box-shadow: inset 1px 1px 4px #999;
-}
 
-.novidades {
-  float: left;
+  &.novidades {
+    float: left;
+    .gradiente(#f5dcdc, #b2b2f4);
+  }
 
-  background-color: #f5dcdc;
-  background: linear-gradient(#f5dcdc, #b2b2f4);
-}
+  &.mais-vendidos {
+    float: right;
+    .gradiente(#dcdcf5, #f4bebe);
+  }
 
-.mais-vendidos {
-  float: right;
+  li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+    .transicao(all, 0.7s);
 
-  background-color: #dcdcf5;
-  background: linear-gradient(#dcdcf5, #f4bebe);
-}
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 5px @escuro;
 
-.painel li {
-  display: inline-block;
-  vertical-align: top;
-  width: 140px;
-  margin: 2px;
-  padding-bottom: 10px;
+      transform: scale(1.2) rotate(-5deg);
 
-  transition: 0.7s ease;
-}
+      &:nth-child(2n) {
+        transform: scale(1.2) rotate(5deg);
+      }
+    }
 
-.painel li:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 5px #333;
+    &:nth-child(n + 7) {
+      display: none;
+    }
+  }
 
-  transform: scale(1.2) rotate(-5deg);
-}
+  h2 {
+    font-family: "Bad Script", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
 
-.painel li:nth-child(2n):hover {
-  transform: scale(1.2) rotate(5deg);
-}
+    &::before {
+      content: "\2756";
+      padding-right: 5px;
+      opacity: 0.4;
+    }
+  }
 
-.painel h2 {
-  font-family: "Bad Script", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
-}
+  a {
+    color: @escuro;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+  }
 
-.painel h2::before {
-  content: "\2756";
-  padding-right: 5px;
-  opacity: 0.4;
-}
+  button {
+    float: right;
+    margin-right: 10px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
 
-.painel a {
-  color: #333;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-}
+    background-color: @escuro;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: 1px 0 1px black;
+    .transicao(all, 0.3s);
 
-.painel button {
-  float: right;
-  margin-right: 10px;
-  padding: 10px;
-  position: relative;
-  margin-bottom: 10px;
+    &:hover {
+      background-color: #393939;
+      box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9);
 
-  background-color: #333;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
-  color: white;
-  font-size: 1em;
-  text-decoration: none;
-  text-shadow: 1px 0 1px black;
+      &::after {
+        border-top-color: #393939;
+      }
+    }
 
-  transition: 0.3s;
-}
+    &::after {
+      content: "";
+      display: block;
+      height: 0;
+      width: 0;
 
-.painel button:hover {
-  background-color: #393939;
-  box-shadow: 1px 0 20px rgba(200, 200, 120, 0.9);
-}
+      border-top: 10px solid @escuro;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
 
-.painel button::after {
-  content: "";
-  display: block;
-  height: 0;
-  width: 0;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
 
-  border-top: 10px solid #333;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-
-  transition: 0.3s;
-}
-
-.painel button:hover::after {
-  border-top-color: #393939;
-}
-
-.painel li:nth-child(n + 7) {
-  display: none;
+      .transicao(all, 0.3s);
+    }
+  }
 }
 
 .painel-aberto li:nth-child(n + 7) {

@@ -30,4 +30,3 @@
   - Email (direcionamento)
 
 #### Falta realizar os exercícios sobre otimização
-#### Falta realizar os exercícios sobre LESS
