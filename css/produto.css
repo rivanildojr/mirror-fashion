@@ -21,6 +21,15 @@
   margin-bottom: 1em;
 }
 
+.fb-like {
+  margin-right: 1.875em;
+}
+
+.fb-like,
+.twitter-share-button {
+  vertical-align: bottom;
+}
+
 .produto legend {
   display: block;
   font: bold 0.9em/2.5 Arial;

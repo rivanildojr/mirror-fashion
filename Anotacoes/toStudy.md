@@ -18,6 +18,16 @@
 - Estudar Pré-Processadores CSS
   - LESS
   - SASS
+- Hospedagem de Sites
+  - Github Pages
+  - Netlify
+  - Zeit
+  - Heroku
+- Redes Sociais
+  - Facebook (curtir, direcionamento)
+  - Instagram (curtir, direcionamento)
+  - Twitter (postagem, direcionamento)
+  - Email (direcionamento)
 
 #### Falta realizar os exercícios sobre otimização
 #### Falta realizar os exercícios sobre LESS
